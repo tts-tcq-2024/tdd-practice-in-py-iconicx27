@@ -23,6 +23,9 @@ class TestStringCalculator(unittest.TestCase):
         def test_ignoreNumbersGreaterThan1000(self):
                 self.assertEqual(add("1,9001"), 1)
 
+        def test_negative(self):
+                self.assertEqual(add("1\n2,3;-3"), 1)
+
 
 
 
