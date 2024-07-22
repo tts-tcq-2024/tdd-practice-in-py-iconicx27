@@ -24,7 +24,7 @@ class TestStringCalculator(unittest.TestCase):
                 self.assertEqual(add("1,9001"), 1)
 
         def test_negative(self):
-                self.assertEqual(add("1\n2,3;-3"), 1)
+                self.assertEqual(add("1\n2,3;-3"), 6)
 
 
 
