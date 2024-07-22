@@ -8,7 +8,7 @@ def split_string(str):
     for delimiter in delimiters:
         str = str.replace(delimiter, ' ')
 
-    lst = input_string.split()
+    lst = str.split()
     
     filtered_list = remove_all_greater_than_1000(lst)
     return filtered_list
