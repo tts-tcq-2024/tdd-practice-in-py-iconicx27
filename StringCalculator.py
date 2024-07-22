@@ -1,16 +1,14 @@
-delimiters = ["//", "," ,";" ,"\n"]
-
-def remove_all_greater_than_1000(lst):
+def remove_all_greater_than_1000_and_less_than_zero(lst):
     numbers = [int(num) for num in lst if 0 <= int(num) <= 1000]
     return numbers
 
 def split_string(str):
+    delimiters = ["//", "," ,";" ,"\n"]
     for delimiter in delimiters:
         str = str.replace(delimiter, ' ')
-
     lst = str.split()
     
-    filtered_list = remove_all_greater_than_1000(lst)
+    filtered_list = remove_all_greater_than_1000_and_less_than_zero(lst)
     return filtered_list
 
 def add(numbers):
