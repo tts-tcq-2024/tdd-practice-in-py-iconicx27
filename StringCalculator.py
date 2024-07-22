@@ -1,11 +1,5 @@
 def add(numbers):
-    if numbers == "":
+    if not numbers:
         return 0
-    elif numbers == "0":
-        return 0
-    else:
-        num_list = numbers.split(",")
-        ans=0
-        for num in num_list:
-            ans+=int(num)
-        return ans
+    num_list = numbers.split(",")
+    return sum(int(num) for num in num_list)
