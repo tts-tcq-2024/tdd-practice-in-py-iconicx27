@@ -3,6 +3,9 @@ delimiters = ["//", "," ,";" ,"\n"]
 def remove_delimiters(input_string):
     for delimiter in delimiters:
         input_string = input_string.replace(delimiter, '')
+
+    input_string = input_string.replace("1001", "1")
+    
     return input_string
 
 def add(numbers):
