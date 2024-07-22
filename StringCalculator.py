@@ -1,7 +1,7 @@
 delimiters = ["//", "," ,";" ,"\n"]
 
 def remove_all_greater_than_1000(lst):
-    numbers = [int(num) for num in lst if int(num) <= 1000]
+    numbers = [int(num) for num in lst if 0 <= int(num) <= 1000]
     return numbers
 
 def split_string(str):
