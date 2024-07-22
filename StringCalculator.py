@@ -1,10 +1,11 @@
 delimiters = ["//", "," ,";" ,"\n"]
 
-def split_string(s):
+def split_string(str):
     for delimiter in delimiters:
-        s = s.replace(delimiter, delimiters[0])
-    filtered_list = [s for s in string_list if int(s) <= 1000]
-    return s.split(delimiters[0])
+        str = str.replace(delimiter, delimiters[0])
+    str.split(delimiters[0])
+    filtered_list = [s for s in str if int(s) <= 1000]
+    return filtered_list
 
 
 # def remove_delimiters(input_string):
