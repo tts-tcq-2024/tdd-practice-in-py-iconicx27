@@ -12,7 +12,7 @@ class TestStringCalculator(unittest.TestCase):
                 self.assertEqual(add("1,2"), 3)
                 
         def test_ignoreNumbersGreaterThan1000(self):
-                self.assertEqual(add("1,1001"), 1)
+                self.assertEqual(add("1,2001"), 1)
                 
         def test_expectSumWithCustomDelimiter(self):
                 self.assertEqual(add("//;\n1;2"), 3)
