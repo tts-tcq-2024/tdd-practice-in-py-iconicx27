@@ -1,7 +1,7 @@
 delimiters = ["//", "," ,";" ,"\n"]
 
 def remove_all_greater_than_1000(lst):
-    numbers = [int(num) for num in lst if num.strip().isdigit() and int(num) <= 1000]
+    numbers = [int(num) for num in lst if int(num) <= 1000]
     return numbers
 
 def split_string(str):
@@ -12,15 +12,6 @@ def split_string(str):
     
     filtered_list = remove_all_greater_than_1000(lst)
     return filtered_list
-
-
-# def remove_delimiters(input_string):
-#     for delimiter in delimiters:
-#         input_string = input_string.replace(delimiter, '')
-
-#     input_string=input_string.
-    
-#     return input_string
 
 def add(numbers):
     if not numbers:
