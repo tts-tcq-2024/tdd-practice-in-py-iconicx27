@@ -1,6 +1,6 @@
 delimiters = ["//", "," ,";" ,"\n"]
 
-def remove_all_greater_than_1000(lst)
+def remove_all_greater_than_1000(lst):
     numbers = [int(num) for num in lst if num.strip().isdigit() and int(num) <= 1000]
     return numbers
 
